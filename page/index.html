@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <!--@include("meta.html")-->
+        <title>首页</title>
+        <!--@include("css.html")-->
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+    <body>
+        <div class="wrapper index-wrapper">
+            <section class="select-header">
+                <div class="select-items active" data-nav="#todo">
+                    <div class="select-item">科目<span class="i-tri-angle ml-02"></span></div>
+                    <div class="select-item">状态<span class="i-tri-angle ml-02"></span></div>
+                </div>
+                <div class="select-items" data-nav="#done">
+                    <div class="select-item">科目<span class="i-tri-angle ml-02"></span></div>
+                    <div class="select-item">时间区间<span class="i-tri-angle ml-02"></span></div>
+                    <div class="select-item">状态<span class="i-tri-angle ml-02"></span></div>
+                </div>
+                <div class="select-opts">
+                    <div class="options">
+                        <div class="option-items active" data-opts="subject">
+                            <div class="option-item">语文</div>
+                            <div class="option-item">数学</div>
+                            <div class="option-item">英语</div>
+                            <div class="option-item">历史</div>
+                            <div class="option-item">全部科目</div>
+                        </div>
+                        <div class="option-items" data-opts="time">
+                            <div class="option-item">近一周</div>
+                            <div class="option-item">近一个月</div>
+                            <div class="option-item">全部科目</div>
+                        </div>
+                        <div class="option-items" data-opts="status">
+                            <div class="option-item">未提交</div>
+                            <div class="option-item">待提交</div>
+                            <div class="option-item">已批改</div>
+                            <div class="option-item">全部状态</div>
+                        </div>
+                    </div>
+                    <div class="fullscreen-mask"></div>
+                </div>
+            </section>
+        </div>
+        <!--@include("js.html")-->
+        <script src="../js/index.js"></script>
+    </body>
+</html>

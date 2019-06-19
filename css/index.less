@@ -1,0 +1,52 @@
+@import "./variables.less";
+
+
+.index-wrapper {
+  position: relative;
+  .select-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+  }
+  .select-items, .option-items {
+    display: none;
+    justify-content: center;
+    transition: all 0.3s;
+    &.active {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .option-item {
+      width: 8rem;
+    }
+  }
+  .select-item, .option-item {
+    height: 3rem;
+    width: 10rem;
+    line-height: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .select-item-left {
+    text-align: right;
+    margin-right: 4rem;
+  }
+
+  .fullscreen-mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 99;
+    &.active {
+      display: block;
+    }
+  }
+}
